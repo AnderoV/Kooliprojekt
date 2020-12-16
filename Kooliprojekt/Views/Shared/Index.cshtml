@@ -1,0 +1,74 @@
+﻿@inject Kooliprojekt.Data.Extensions.ITenantProvider TenantProvider
+@model Kooliprojekt.Pages.Shared.IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .column {
+        padding: 5px;
+    }
+
+    #pilt {
+        margin: 10px 10px 10px 10px;
+        width: 400px;
+        height: 250px;
+    }
+
+    #imagebox {
+        width: 900px;
+        height: 675px;
+    }
+
+    #C63 {
+        width: 50px;
+        height: 50px;
+        margin-left: 125px;
+    }
+
+    #demon {
+        width: 50px;
+        height: 50px;
+        margin-left: 300px;
+    }
+
+    #R8 {
+        width: 50px;
+        height: 50px;
+        margin-left: 180px;
+    }
+
+    #tesla {
+        width: 50px;
+        height: 50px;
+        margin-left: 350px;
+    }
+</style>
+<h2>Welcome</h2>
+
+
+
+<p>
+    <li>Welcome to our rental site.</li>
+    <li>We have a wide range of options.</li>
+    <li>We offer car rental services at affordable prices.</li>
+    <li>Our car park contains vehicles from small cars to sports cars.</li>
+    <li>All cars are clean, tidy and in good mechanical condition.</li>
+    <li>Rental price includes insurance and unlimited mileage.</li>
+    <li>We will do our best to provide the finest service at the best prices.</li>
+    <br />
+
+    <div id="imagebox">
+        <strong id="C63">Mercedes-Benz C 63 AMG</strong>
+        <strong id="demon">Dodge Demon</strong>
+        <div>
+            <img id="pilt" src="~/assets/corporate/img/cars/1.png" alt="C63"></img>
+            <img id="pilt" src="~/assets/corporate/img/cars/20.png" alt="Demon"></img>
+        </div>
+        <strong id="R8">Audi R8</strong>
+        <strong id="tesla">Tesla Model S 70D</strong>
+        <div>
+            <img id="pilt" src="~/assets/corporate/img/cars/16.png" alt="R8"></img>
+            <img id="pilt" src="~/assets/corporate/img/cars/3.png" alt="70D"></img>
+        </div>
+    </div>
+</p>

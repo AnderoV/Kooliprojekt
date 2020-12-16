@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    string json = ViewData["results"].ToString();
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Tenant Handler</h1>
+
+        <form method="POST">
+            <textarea name="json" cols="70" rows="20">@json</textarea>
+            <input type="submit" value="Save"/>
+        </form>
+    </div>

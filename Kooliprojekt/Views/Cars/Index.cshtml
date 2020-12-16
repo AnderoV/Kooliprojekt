@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Kooliprojekt.Models.CarModels.CarListItemModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LicencePlate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KmFare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TimeFare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CarModel.Mark)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pictures)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LicencePlate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KmFare)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeFare)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CarModel.Mark)
+            </td>
+            @if (item.Pictures.Count != 0)
+            {
+                <td>
+                    <img src="@item.Pictures[0].Url" />
+                </td>
+            }
+            @*<tr>
+
+                @Html.DisplayFor(modelItem => item.Pictures)
+                <th>
+                    <img src="@item.Pictures.Url" />
+
+                </th>
+
+        </tr>*@
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>|
+                <a asp-controller="Bookings" asp-action="Book" asp-route-id="@item.Id">Book</a>|
+                <a asp-controller="Operations" asp-action="Index">Operations</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

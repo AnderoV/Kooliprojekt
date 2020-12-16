@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+<<<<<<< HEAD
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\Desktop\Kooliprojekt\tools\.store\.stage\dyeluea4.k3i</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\opilane\Desktop\Kooliprojekt\tools\.store\.stage\dyeluea4.k3i</NuGetPackageFolders>
+=======
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\Desktop\Kooliprojekt\tools\.store\.stage\04u1zmbv.bup</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\opilane\Desktop\Kooliprojekt\tools\.store\.stage\04u1zmbv.bup</NuGetPackageFolders>
+>>>>>>> b76c91b37f2069b7c8797f7decf67c77d0307972
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">DotnetToolReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.4.0</NuGetToolVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD
+    <Pkgdotnet-reportgenerator-globaltool Condition=" '$(Pkgdotnet-reportgenerator-globaltool)' == '' ">C:\Users\opilane\Desktop\Kooliprojekt\tools\.store\.stage\dyeluea4.k3i\dotnet-reportgenerator-globaltool\4.4.6</Pkgdotnet-reportgenerator-globaltool>
+=======
+    <Pkgdotnet-reportgenerator-globaltool Condition=" '$(Pkgdotnet-reportgenerator-globaltool)' == '' ">C:\Users\opilane\Desktop\Kooliprojekt\tools\.store\.stage\04u1zmbv.bup\dotnet-reportgenerator-globaltool\4.4.6</Pkgdotnet-reportgenerator-globaltool>
+>>>>>>> b76c91b37f2069b7c8797f7decf67c77d0307972
+  </PropertyGroup>
+</Project>

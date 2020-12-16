@@ -1,0 +1,109 @@
+﻿@model IEnumerable<Kooliprojekt.Models.BookingModels.BookingListItem>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Start)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car.LicencePlate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car.CarModel.Mark)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car.CarModel.Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Start)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.End)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Km)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Start)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Car.LicencePlate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Car.CarModel.Mark)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Car.CarModel.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Start)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.End)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Km)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+
+
+            @if (item.Pending != true)
+            {
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>|
+                    <a asp-action="StopBooking" asp-route-id="@item.Id">StopBooking</a>
+
+                </td>
+            }
+            else
+            {
+
+
+        <td>
+            <p> Waiting for approval</p>
+            @Html.DisplayFor(modelItem => item.Price)
+            <a asp-action="Delete" asp-route-id="@item.Id">Approve</a>
+            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+        </td>
+
+            }
+
+
+        </tr>
+        }
+    </tbody>
+</table>

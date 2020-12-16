@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kooliprojekt", "Kooliprojekt\Kooliprojekt.csproj", "{A98FC5E6-40A0-4E78-B125-3551179722C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp", "WpfApp\WpfApp.csproj", "{CC2E45C3-8FD4-4B24-87C9-59150C3F06E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "WindowsFormsApp\WindowsFormsApp.csproj", "{7504304A-F474-495B-9E94-2FD08228940C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TenantHandler", "TenantHandler\TenantHandler.csproj", "{3BB90733-A91D-4A27-B4A9-ED05B3E55278}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kooliprojekt.UnitTests", "Kooliprojekt.UnitTests\Kooliprojekt.UnitTests.csproj", "{31FDF01A-2F4E-4575-991D-CE42536A585F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kooliprojekt.IntegrationTests", "XUnitTestProject\Kooliprojekt.IntegrationTests.csproj", "{3C53EA88-B04B-455D-AA0F-2CCD9BE7C13D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A98FC5E6-40A0-4E78-B125-3551179722C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A98FC5E6-40A0-4E78-B125-3551179722C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A98FC5E6-40A0-4E78-B125-3551179722C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A98FC5E6-40A0-4E78-B125-3551179722C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC2E45C3-8FD4-4B24-87C9-59150C3F06E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC2E45C3-8FD4-4B24-87C9-59150C3F06E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC2E45C3-8FD4-4B24-87C9-59150C3F06E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC2E45C3-8FD4-4B24-87C9-59150C3F06E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7504304A-F474-495B-9E94-2FD08228940C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7504304A-F474-495B-9E94-2FD08228940C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7504304A-F474-495B-9E94-2FD08228940C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7504304A-F474-495B-9E94-2FD08228940C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BB90733-A91D-4A27-B4A9-ED05B3E55278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB90733-A91D-4A27-B4A9-ED05B3E55278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB90733-A91D-4A27-B4A9-ED05B3E55278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB90733-A91D-4A27-B4A9-ED05B3E55278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31FDF01A-2F4E-4575-991D-CE42536A585F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31FDF01A-2F4E-4575-991D-CE42536A585F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31FDF01A-2F4E-4575-991D-CE42536A585F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31FDF01A-2F4E-4575-991D-CE42536A585F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C53EA88-B04B-455D-AA0F-2CCD9BE7C13D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C53EA88-B04B-455D-AA0F-2CCD9BE7C13D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C53EA88-B04B-455D-AA0F-2CCD9BE7C13D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C53EA88-B04B-455D-AA0F-2CCD9BE7C13D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {269E76CF-B902-4A70-A690-5BBE7B75F8A9}
+	EndGlobalSection
+EndGlobal

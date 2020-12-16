@@ -1,0 +1,43 @@
+[
+  {
+    "Id": 1,
+    "Host": "sme1:5000",
+    "DatabaseType": 1,
+    "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=MultitenantWeb_SME;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "Name": "Small Biz 1",
+    "UseThumbnails": true,
+    "NewCarNotification": false,
+    "test": false
+  },
+  {
+    "Id": 2,
+    "Host": "sme2:5000",
+    "DatabaseType": 1,
+    "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=MultitenantWeb_SME2;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "Name": "Small biz 2",
+    "UseThumbnails": false,
+    "NewCarNotification": false,
+    "test": false
+  },
+  {
+    "Id": 3,
+    "Host": "bigcorp:5000",
+    "DatabaseType": 3,
+    "ConnectionString": "Data source=mydb.db",
+    "Name": "Big corp",
+    "UseThumbnails": true,
+    "NewCarNotification": false,
+    "test": true
+  },
+  {
+    "Id": 4,
+    "Host": "localhost",
+    "DatabaseType": 3,
+    "ConnectionString": "Data source=mytestdb.db",
+    "Name": "TestTenant",
+    "UseThumbnails": true,
+    "NewCarNotification": false,
+    "test": true
+  }
+
+]

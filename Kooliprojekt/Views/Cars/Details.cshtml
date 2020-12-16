@@ -1,0 +1,67 @@
+﻿@model Kooliprojekt.Models.CarModels.CarDetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Car</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LicencePlate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LicencePlate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KmFare)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KmFare)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TimeFare)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TimeFare)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CarModel.Mark)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CarModel.Mark)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CarModel.Model)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CarModel.Model)
+        </dd>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Pictures)
+            </th>
+
+        </tr>
+        <tr>
+            @for (int i = 0; i < Model.Pictures.Count; i++)
+            {
+                @Html.DisplayFor(modelItem => Model.Pictures)
+                <th>
+                    <img src="@Model.Pictures[i].Url" />
+
+                </th>
+            }
+
+        </tr>
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

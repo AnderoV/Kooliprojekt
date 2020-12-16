@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<assemblies timestamp="02/07/2020 10:30:54">
+  <assembly name="C:\Users\opilane\Desktop\Kooliprojekt\Kooliprojekt.UnitTests\bin\Debug\netcoreapp3.1\Kooliprojekt.UnitTests.dll" run-date="2020-02-07" run-time="10:30:54" total="1" passed="1" failed="0" skipped="0" time="0.002" errors="0">
+    <errors />
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for Kooliprojekt.UnitTests.UnitTest1" time="0.002">
+      <test name="Kooliprojekt.UnitTests.UnitTest1.Test1" type="Kooliprojekt.UnitTests.UnitTest1" method="Test1" time="0.0022015" result="Pass">
+=======
+<assemblies timestamp="01/31/2020 08:44:59">
+  <assembly name="C:\Users\opilane\Desktop\Kooliprojekt\Kooliprojekt.UnitTests\bin\Debug\netcoreapp3.1\Kooliprojekt.UnitTests.dll" run-date="2020-01-31" run-time="08:44:59" total="1" passed="1" failed="0" skipped="0" time="0.002" errors="0">
+    <errors />
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for Kooliprojekt.UnitTests.UnitTest1" time="0.002">
+      <test name="Kooliprojekt.UnitTests.UnitTest1.Test1" type="Kooliprojekt.UnitTests.UnitTest1" method="Test1" time="0.0022414" result="Pass">
+>>>>>>> b76c91b37f2069b7c8797f7decf67c77d0307972
+        <traits />
+      </test>
+    </collection>
+  </assembly>
+</assemblies>

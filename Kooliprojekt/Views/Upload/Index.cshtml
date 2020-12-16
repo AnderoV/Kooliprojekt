@@ -1,0 +1,26 @@
+﻿@model Kooliprojekt.Data.Car
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<a asp-action="Upload">Upload</a>
+
+<tr>
+    <th>
+        @Html.DisplayNameFor(model => model.Pictures)
+    </th>
+
+</tr>
+<tr>
+    @for (int i = 0; i < Model.Pictures.Count; i++)
+    {
+        @Html.DisplayFor(modelItem => Model.Pictures)
+        <th>
+            <img src="@Model.Pictures[i].Url" />
+
+        </th>
+    }
+
+</tr>

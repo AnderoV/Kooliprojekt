@@ -1,0 +1,51 @@
+﻿<!-- BEGIN HEADER -->
+<div class="header">
+    <div class="container">
+        <a class="site-logo" asp-controller="Home"><img src="~/assets/corporate/img/logos/logo-rendikas24.png" alt="Rendikas24"></a>
+
+        <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+        @*<partial name="_TopShoppingCard" />*@
+
+        <!-- BEGIN NAVIGATION -->
+        <div class="header-navigation">
+            <ul>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="CarModels" asp-action="Index">Car Models</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Cars" asp-action="Index">Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Bookings" asp-action="Index">Bookings</a>
+                </li>
+
+
+                <!-- BEGIN TOP SEARCH -->
+                <!--
+         <li class="menu-search">
+        <span class="sep"></span>
+        <i class="fa fa-search search-btn"></i>
+        <div class="search-box">
+            <form action="#">
+                <div class="input-group">
+                    <input type="text" placeholder="Search" class="form-control">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </li>
+    -->
+                <!-- END TOP SEARCH -->
+            </ul>
+        </div>
+        <!-- END NAVIGATION -->
+    </div>
+</div>
+<!-- Header END -->
