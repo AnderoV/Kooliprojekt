@@ -1,6 +1,10 @@
-﻿using System;
+﻿using Kooliprojekt.Data;
+using Kooliprojekt.Services;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
+using Xunit;
 
 namespace Kooliprojekt.UnitTests
 {

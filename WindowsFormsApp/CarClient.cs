@@ -10,12 +10,11 @@ using static WindowsFormsApp.Views.CarViewModel;
 
 namespace WindowsFormsApp
 {
-    public class CarClient 
+    public class CarClient : ICarClient
     {
         private const string BaseUrl = "http://bigcorp:5000/api/";
 
-        //public CarsPresenter Presenter { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        //IList<Car> ICarsView.List { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
 
         public async Task<IList<Car>> List(int page)
         {

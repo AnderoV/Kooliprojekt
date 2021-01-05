@@ -1,6 +1,11 @@
-﻿using System;
+﻿using Kooliprojekt.Data;
+using Kooliprojekt.Services;
+using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
+using Xunit;
 
 namespace Kooliprojekt.UnitTests
 {

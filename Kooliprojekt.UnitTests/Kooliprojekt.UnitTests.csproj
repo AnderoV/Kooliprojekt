@@ -32,6 +32,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Kooliprojekt\Kooliprojekt.csproj" />
     <ProjectReference Include="..\WindowsFormsApp\WindowsFormsApp.csproj" />
+    <ProjectReference Include="..\WpfApp\WpfApp.csproj" />
   </ItemGroup>
 
 </Project>

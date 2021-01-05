@@ -9,18 +9,15 @@ namespace WindowsFormsApp
 {
     static class Program
     {
-        /// <summary> 
-        /// The main entry point for the application. 
-        /// </summary> 
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var form = new Form1();
-            form.Presenter = new CarsPresenter(form);
+            var CarClient = new CarClient();
+            form.Presenter = new CarsPresenter(form, CarClient);
             Application.Run(form);
         }
-
     }
 }

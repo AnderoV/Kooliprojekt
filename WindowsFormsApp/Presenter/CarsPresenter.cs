@@ -9,15 +9,16 @@ using static WindowsFormsApp.Views.CarViewModel;
 
 namespace WindowsFormsApp.Presenter
 {
-   public class CarsPresenter
+    public class CarsPresenter
     {
-        private readonly CarClient _CarClient = new CarClient();
         private readonly ICarsView _CarView;
+        private readonly ICarClient _CarClient;
 
-        public CarsPresenter(ICarsView CarView)
+        public CarsPresenter(ICarsView CarView, ICarClient CarClient)
         {
             _CarView = CarView;
-             LoadCars();
+            _CarClient = CarClient;
+            LoadCars();
         }
         public async Task LoadCars()
         {
@@ -29,7 +30,7 @@ namespace WindowsFormsApp.Presenter
             List.Add(new Car { LicencePlate = "", KmFare = 0, TimeFare = 0 });
             await SaveCars(List);
             await LoadCars();
-           
+
         }
 
         public async Task SaveCars(IList<Car> List)
@@ -39,12 +40,6 @@ namespace WindowsFormsApp.Presenter
                 await _CarClient.Save(List[i]);
             }
         }
-
-        //public void SaveCar()
-        //{
-        //    Customer customer = new Customer { Name = _view.CustomerName, Address = _view.Address, Phone = _view.Phone };
-        //    _repository.SaveCustomer(_view.SelectedCustomer, customer);
-           
-        //}
     }
 }
+

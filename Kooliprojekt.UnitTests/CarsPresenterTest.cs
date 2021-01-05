@@ -1,11 +1,16 @@
-﻿using System;
+﻿using Moq;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
+using WindowsFormsApp;
+using WindowsFormsApp.Models;
+using WindowsFormsApp.Presenter;
+using Xunit;
+using static WindowsFormsApp.Views.CarViewModel;
 
 namespace Kooliprojekt.UnitTests
 {
 
-    public class CarPresenterTest
+    public class CarsPresenterTest
     {
 
         [Fact]

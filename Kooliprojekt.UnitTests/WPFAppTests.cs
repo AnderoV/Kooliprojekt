@@ -1,6 +1,13 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Moq;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
+using WpfApp;
+using WpfApp.Models;
+using WpfApp.ViewModels;
+using Xunit;
 
 namespace Kooliprojekt.UnitTests
 {
@@ -36,6 +43,5 @@ namespace Kooliprojekt.UnitTests
             MockHttpCLient.VerifyAll();
 
         }
-
     }
 }

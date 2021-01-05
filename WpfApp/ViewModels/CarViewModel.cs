@@ -8,27 +8,22 @@ using WpfApp.Models;
 
 namespace WpfApp.ViewModels
 {
-    public class CarViewModel : NotifyPropertyChangedBase
+    public class CarViewmodel : NotifyPropertyChangedBase
     {
         public int Id { get; set; }
-        private readonly CarClient _httpClient = new CarClient();
+        private readonly IHttpClient _httpClient;
         public ObservableCollection<Car> cars { get; private set; }
-        public RelayCommand<object> SaveCommand { get; private set; }
 
         private readonly IWindowService _windowService;
 
-        public CarViewModel() : this(new WindowService())
+        public CarViewmodel(IHttpClient httpClient)
         {
 
-        }
 
-        public CarViewModel(IWindowService windowService)
-        {
-            _windowService = windowService;
-
+            _httpClient = httpClient;
             cars = new ObservableCollection<Car>();
 
-           
+
             Load();
         }
 
@@ -42,7 +37,7 @@ namespace WpfApp.ViewModels
             }
         }
     }
-} 
+}
 
- 
+
 
