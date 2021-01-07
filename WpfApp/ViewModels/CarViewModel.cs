@@ -8,7 +8,7 @@ using WpfApp.Models;
 
 namespace WpfApp.ViewModels
 {
-    public class CarViewmodel : NotifyPropertyChangedBase
+    public class CarViewModel : NotifyPropertyChangedBase
     {
         public int Id { get; set; }
         private readonly IHttpClient _httpClient;
@@ -16,7 +16,7 @@ namespace WpfApp.ViewModels
 
         private readonly IWindowService _windowService;
 
-        public CarViewmodel(IHttpClient httpClient)
+        public CarViewModel(IHttpClient httpClient)
         {
 
 
