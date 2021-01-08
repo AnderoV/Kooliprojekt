@@ -256,11 +256,11 @@ public class BookingServiceTests : TestBase
     [Fact]
     public async Task GetBookingEditModel_returns_no_detailmodel_on_wrong_username()
     {
-        int id = 1;
+        int id = 5;
 
         dbContext.Bookings.Add(new Booking
         {
-            Id = 1,
+            Id = 5,
             Car = new Car(),
             Km = 10,
             Pending = false,

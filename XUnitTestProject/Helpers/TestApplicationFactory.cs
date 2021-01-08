@@ -22,5 +22,10 @@ namespace AspNetCoreTests.IntegrationTests
                               conf.AddJsonFile(configPath);
                           });
         }
+        protected override void ConfigureWebHost(IWebHostBuilder builder)
+        {
+            builder.UseContentRoot(".");
+            base.ConfigureWebHost(builder);
+        }
     }
 }

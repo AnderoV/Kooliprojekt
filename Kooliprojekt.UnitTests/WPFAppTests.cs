@@ -31,7 +31,7 @@ namespace Kooliprojekt.UnitTests
         public async Task Verify_CarViewmodel_Load_Function()
         {
             Mock<IHttpClient> MockHttpCLient = new Mock<IHttpClient>();
-            var CarViewmodel = new CarViewmodel(MockHttpCLient.Object);
+            var CarViewmodel = new CarViewModel(MockHttpCLient.Object);
 
             var NewCar = new Car { LicencePlate = "3252", KmFare = 45 };
             var NewCar2 = new Car { LicencePlate = "3252", KmFare = 45 };
