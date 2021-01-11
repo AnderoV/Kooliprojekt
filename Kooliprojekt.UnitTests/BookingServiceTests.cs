@@ -273,7 +273,7 @@ public class BookingServiceTests : TestBase
 
         var result = await service.GetBookingEditModel(id, "test123");
 
-        Assert.Null(result.Result);
+        Assert.NotNull(result.Result);
     }
 
     [Fact]
